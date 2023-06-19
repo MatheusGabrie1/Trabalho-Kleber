@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(211, 211, 211);
+    font-family:'montserrat', sans-serif;
+}
+/* Cabeçalho */
+header{
+    background-color: black;
+    padding: 20px 0;
+    width: 100vw;
+    /* VW - Viewport width
+    100VW = 100% da tela em largura
+    é diferente da % em si.
+    %(Porcentagem) É referente á TAG Pai
+    VW é referente á tela */
+}
+/* O Div que possui a classe '.caixa' */
+
+.caixa {
+    margin: 0 auto;
+    /* Centralizar */
+    width: 940px;
+    /* Largura em 940px */
+    position: relative;
+    /* Relativo ao pai (header) respeita o header e seus limites */
+}
+
+/* O UL Dentro de Nav 
+seria: nav ul*/
+
+/* o Nav que possui a classe navegação */
+
+.navegacao {
+    position: absolute;
+    /* posição absoluta
+    podemos posicionar a vontade */
+    top: 50%;
+    /* Está 50% longe do topo */
+    right: 0;
+    /* Colado á direita */
+    /* Só é possivel posicionar com top e right por causa do position:absolute */
+}
+
+/* os <li> dentro de navegação */
+.navegacao li{
+    display: inline;
+    /* Fica um do lado do outro */
+    margin-right: 20px;
+    /* Margin á direitia
+    Espaço entre os <li> */
+}
+
+/* Os <a> dentro da navegação */
+.navegacao a {
+    text-transform: uppercase;
+    /* MAIÚSCULO */
+    font-weight: bolder;
+    /* Mais pesado, forte, negrito */
+    color: white;
+    text-decoration: none;
+    /* Tirar sublinhado */
+    font-size: 25px;
+}
+
+/* A tag<a> de .navegacao
+ao passar o mouse */
+.navegacao a:hover{
+    color: #7d46a5;
+    text-decoration: underline;
+}
+
+/* <img> dentro do .caixa */
+.caixa img {
+    width: 120px;
+    margin: -20px 0;
+    /* -20 cima e baixo e 0 lateralmente
+    por conta do espaço em branco
+    de imagem */
+}
+
+/* --------------- Sessão serviços --------------- */
+
+/* O Div com a classe .lista-produtos */
+.lista-produtos{
+    background: slategray;
+    text-align: center;
+}
+
+/* É o UL (Lista não ordenada) .produtos */
+
+.produtos{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/*  Os LIs dentro do UL .produtos */
+
+.produtos li{
+    display: inline-block;
+    /*  inline + block
+    bom dos dois
+    inline: aceita ao lado
+    block: pode mexer no tamanho inline + block = inlineblock
+    aceita ao lado + muda tamanho */
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    width:300px;
+    transition: all 0.6s;
+}
+
+/* Imagem dos produtos/serviços */
+
+.imagem-produto {
+    width: 200px;
+}
+
+/* H2 Que possui a classe .titulo-produto */
+
+.titulo-produto {
+    font-family: 'Bitter';
+    font-size: 30px;
+    height: 60px;
+    font-weight: bolder;
+    color: #270043;
+    margin-bottom: 35px;
+}
+
+/* P com a classe .descricao-produto */
+.descricao-produto {
+    width: 80%;
+    /* Ele não vai colar na borda
+    do card, pois não usa 100% */
+    font-size: 20px;
+    font-family: 'Bitter', sans-serif;
+    display: block;
+    /* /\ Para o preço não ficar ao lado caso a descrição seja curta */
+    margin: 15px auto;
+    /* /\ Centralizar 'CAIXA' */
+}
+
+/* É o <p> com a classe .preco-produto */
+
+.preco-produto {
+    font-family:'Bitter', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #270043;
+    background-color: #f1defa;
+    border-radius: 10px;
+}
+
+/* Passando o mouse sobre o li dentro de .produtos e mudando ele */
+
+.produtos li:hover{
+    background-color: #e1d9e9;
+    box-shadow: 2px 2px 8px black;
+}
+
+/* O Titulo-produto dentro de .produtos li */
+.produtos li:hober .titulo-produto {
+    font-size: 45px;
+}
+
+/* O Mouseé sobre o card mas quem é afetado é o titulo */
+
+/* O mouse é sobre o card mas quem é afetado é a imagem */
+.produtos li:hover .imagem-produto{
+    width: 220px;
+}
+
+/* O mouse é sobre o card mas quem é afetado é o preço */
+.produto li:hover .preco-produto{
+    font-size: 30px;
+}
+
+footer{
+    text-align: center;
+    background-image: url('../img/footer.jpg');
+    padding-bottom: 10px;
+}
+
+/* Imagem que possui o ID logo-footer */
+
+#logo-footer{
+width: 250px;
+}
+
+/* Texto de Copyright */
+
+.copyright{
+    color: white;
+    font-size: 20px;
+}
+
+/* ------------------------- */
+/*  Exclusivo index.html */
+
+#imagem-banner{
+    width: 100%;
+}
+
+/* A section que possui a classe .principal */
+
+.principal {
+    background-color: rgb(211, 211, 211);
+    margin: 0 auto;
+    padding: 50px 0; 
+    width: 940px;
+
+    /* 50 px na vertical e 0 na horizontal */
+}
+
+/* Os parágrafos que possuem a classe .descricao-produto */
+
+.descricao-produto{
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+/* O h2 que possui a classe titulo-principal */
+
+.titulo-principal{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* O Img com ID Computador */
+
+#computador {
+    width: 120px;
+    float: left;
+    /* Flutua para a esquerda */
+    margin: 0px 40px 90px 0px;
+    /* cima -> DIR -> BAIXO -> ESQ */
+}
+
+/* O H2 que tem a classe missão */
+
+.missao {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px purple;
+    margin-bottom: 15px;
+}
+
+
+/* ----------------------- Sessão mapa ----------------------- */
+.mapa{
+    padding:50px 0;
+}
+
+/* O parágrafo <p> dentro do mapa */
+.mapa p {
+    text-align: center;
+    font-size: 23px;
+}
+/* O div que possui a classe .mapa-link */
+.mapa-link {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Sessão benefícios */
+
+.beneficios{
+    padding: 50px 0;
+    background-color: rgb(211, 211, 211);
+}
+
+/* É o div que tem a classe caixa-benefícios
+E que seus filhos (Interno) são: lista e imagem */
+
+.caixa-beneficios{
+    width: 90%;
+    margin: 0 auto;
+    display: flex; /* Display Flexivel */
+/* Quando um elemento recebe um display flex
+os seus filhos (tudo o que dentro) tem uma organização no posicionamento */
+    justify-content: space-between;
+    /* Comando de display flex 
+    Espaço-entre eles, onde um vai ficar longe do outro de forma equilibrada */
+}
+
+/* É o UL que possui a classe lista-benefícios 
+É um filho direto do caixa-benefícios então ele está sendo influenciado pelo display flex */
+
+.lista-beneficios {
+    flex-basis: 40%;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-shadow:black;
+     /* Tamanho base (Inicial) */
+    /* Esse filho de "Flex" usa 40% de total do de espaço de pai os
+    compatação com seu irmão (Img) que taxá o resto (60%) */
+}
+
+/* Cade um dos <li> que possuam essa classe */
+
+.item {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+/* Pseudoelemento (elemento que ele não existe por si só)
+Mas é uma seleção que especifica */
+/* first-child e primeiro <li> que possua essa classe */
+
+.item:first-child {
+    font-weight: solid;
+}
+
+/* Seleção especial: Antes do elemento, antes do escrito */
+.item::before {
+    content: '';  /* É o texto que fica entre o <li> e </li> */
+    /* Windows + . (ponto) ativa o emoticon */
+}
+
+#imagem-beneficios {
+    width: 50%;
+    box-shadow: 5px 5px 10px black;
+    opacity: 1;
+    /* Adicionamos a opacidade pois faremos efeito hover nela */
+    transition: all 0.4s;
+}
+
+/* Ao passar o mouse sobre... */
+#imagem-beneficios:hover {
+    opacity: 0.4s;
+}
+
+/* Div pai do video */
+.video{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 10px solid black;
+    padding: 50px 0
+    ;
+}
+.descricao-principal{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-shadow:black;
+}
